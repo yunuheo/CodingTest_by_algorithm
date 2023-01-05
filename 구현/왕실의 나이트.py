@@ -17,8 +17,8 @@ cnt = 0
 for step in steps:
     next_row = row + step[1]
     next_col = col + step[0]
+    #해당 위치로 이동이 가능하면 카운트(cnt) 증가
     if next_row >= 1  and next_row <= 8 and next_col >= 1 and next_col <= 8:
         cnt += 1
 
 print(cnt)
-
